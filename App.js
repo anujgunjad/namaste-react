@@ -4,27 +4,27 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
 
-const heading = React.createElement(
-    "h1",
-    {
-        id:"title",
-        key: "h1"
-    }, 
-    "Namaste from React"
+//JSX - html like syntax in javascript
+const Title = () => (
+    <h2 id="title" key="h2">
+        Namaste React
+    </h2>
 );
 
-const heading2 = React.createElement(
-    "h2",
-    {
-        id: "title",
-        key: "h2"
-    }, 
-    "H2 tag"
-)
+const HeaderComponent = () => {
+    return (
+        <div>
+            <Title /> {/*Component Compositions*/}
+            <h2 id="title" key="h2">
+                 Namaste React
+            </h2>
+        </div>
+    );
+} 
+// React.createElement => Object => HTML => DOM
 
-const container = React.createElement("div",{id: "container"},[heading,heading2])
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<HeaderComponent />);
 
 /** 
 * We should put percel-cache in gitignore
