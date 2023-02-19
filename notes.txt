@@ -1,0 +1,18 @@
+Named Import 
+ - its not an object Destructuring 
+ - We use like import { xyz } from "./path"
+
+Default Import
+
+Object Destructure
+
+config.js file
+
+One way data binding
+
+eact use 1 way binding
+
+Every component in react maintain a state
+
+Why we need state variable - 
+ - React wont know if we update local variable and ui will not been changed
