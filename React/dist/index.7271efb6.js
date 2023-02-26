@@ -27400,6 +27400,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Title", ()=>Title);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
         href: "/",
@@ -27409,12 +27410,12 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
             className: "logo"
         }, void 0, false, {
             fileName: "src/components/Header.js",
-            lineNumber: 3,
+            lineNumber: 4,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Header.js",
-        lineNumber: 2,
+        lineNumber: 3,
         columnNumber: 28
     }, undefined);
 _c = Title;
@@ -27429,7 +27430,7 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27437,31 +27438,45 @@ const Header = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 14,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 15,
+                                columnNumber: 25
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 15,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/about",
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 16,
+                                columnNumber: 25
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 16,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
+                            children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 17,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 18,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27472,29 +27487,29 @@ const Header = ()=>{
                                 children: isLogin ? "Logout" : "Login"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 18,
+                                lineNumber: 19,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 13,
+                    lineNumber: 14,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 10
     }, undefined);
 };
@@ -27510,7 +27525,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27674,1045 +27689,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7f60a100c7d8bd15":"786KC"}],"8yaV8":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0606.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _s = $RefreshSig$();
-function filterData(txt, data) {
-    const result = data.filter((dataItem)=>dataItem?.data?.name?.toLowerCase()?.includes(txt));
-    console.log(result);
-    return result;
-}
-const Body = ()=>{
-    _s();
-    const [searchTxt, setSearchTxt] = (0, _react.useState)(""); //This function return 
-    const [allRestaurantData, setAllRestaurantData] = (0, _react.useState)([]);
-    const [filteredRestaurantData, setFilteredRestaurantData] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        //API Call
-        getRestaurants();
-    }, []);
-    async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
-        const json = await data.json();
-        console.log(json?.data?.cards[2]?.data?.data?.cards);
-        setAllRestaurantData(json?.data?.cards[2]?.data?.data?.cards);
-        setFilteredRestaurantData(json?.data?.cards[2]?.data?.data?.cards);
-    }
-    return allRestaurantData?.length !== 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-input-wrap",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        id: "one",
-                        type: "text",
-                        placeholder: "search items",
-                        value: searchTxt,
-                        onChange: (e)=>setSearchTxt(e.target.value)
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 26,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        type: "button",
-                        onClick: ()=>{
-                            let data = filterData(searchTxt, allRestaurantData);
-                            setFilteredRestaurantData(data);
-                        },
-                        children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 27,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Body.js",
-                lineNumber: 25,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-list",
-                children: filteredRestaurantData?.length !== 0 ? filteredRestaurantData?.map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                        ...restaurant.data,
-                        key: restaurant.data.id,
-                        __source: {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 34,
-                            columnNumber: 16
-                        },
-                        __self: undefined
-                    });
-                }) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "No data found!!!"
-                }, void 0, false, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 35,
-                    columnNumber: 12
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 32,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 37,
-        columnNumber: 15
-    }, undefined);
-};
-_s(Body, "mwtwxKgTHbW4wul+yeee+Xub44U=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$0606.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ffb1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _contants = require("../contants");
-//Case 10- Using Map function to make it more dynamic
-const RestaurantCard = ({ name , cloudinaryImageId , cuisines , totalRatingsString  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _contants.IMG_CDN_IMAGE) + cloudinaryImageId,
-                alt: "Burger King"
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(",")
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: totalRatingsString
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 13,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/RestaurantCard.js",
-        lineNumber: 9,
-        columnNumber: 10
-    }, undefined);
-};
-_c = RestaurantCard;
-exports.default = RestaurantCard;
-var _c;
-$RefreshReg$(_c, "RestaurantCard");
-
-  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../contants":"6xi3Y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6xi3Y":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "IMG_CDN_IMAGE", ()=>IMG_CDN_IMAGE);
-parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
-const IMG_CDN_IMAGE = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const restaurantList = [
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "168043",
-            "name": "Burger Singh (Big Punjabi Burgers)",
-            "uuid": "ea186a36-57a8-4314-a33f-d7c0d8c3b760",
-            "city": "4",
-            "area": "Sector-10, Rohini",
-            "totalRatingsString": "1000+ ratings",
-            "cloudinaryImageId": "fyuyd6jokqveketdmzpn",
-            "cuisines": [
-                "American",
-                "Fast Food",
-                "Snacks"
-            ],
-            "tags": [],
-            "costForTwo": 30000,
-            "costForTwoString": "₹300 FOR TWO",
-            "deliveryTime": 33,
-            "minDeliveryTime": 30,
-            "maxDeliveryTime": 40,
-            "slaString": "30-40 MINS",
-            "lastMileTravel": 2,
-            "slugs": {
-                "restaurant": "burger-singh-rohini",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "Shop No-11, Ground Floor, D Mall, Twin District Centre, Sector-10,Rohini, Rohini, North West , Delhi-110085",
-            "locality": "Sector-10",
-            "parentId": 375065,
-            "unserviceable": false,
-            "veg": false,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "aggregatedDiscountInfo": {
-                "header": "60% off",
-                "shortDescriptionList": [
-                    {
-                        "meta": "60% off | Use TRYNEW",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "60% off up to ₹120 | Use code TRYNEW",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "aggregatedDiscountInfoV2": {
-                "header": "60% OFF",
-                "shortDescriptionList": [
-                    {
-                        "meta": "Use TRYNEW",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "60% off up to ₹120 | Use code TRYNEW",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "distance",
-                        "fee": 3900,
-                        "message": ""
-                    },
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 3900,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "3900",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "2 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "168043",
-                "deliveryTime": 33,
-                "minDeliveryTime": 30,
-                "maxDeliveryTime": 40,
-                "lastMileTravel": 2,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": false,
-            "avgRating": "4.1",
-            "totalRatings": 1000,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "240497",
-            "name": "Pandit Ji Ke Paranthe",
-            "uuid": "e4a09101-93ee-4030-b7dc-310963a082f2",
-            "city": "4",
-            "area": "Budh Vihar Phase 1",
-            "totalRatingsString": "50+ ratings",
-            "cloudinaryImageId": "mdhiha2wnryfemt2d4ji",
-            "cuisines": [
-                "Indian"
-            ],
-            "tags": [],
-            "costForTwo": 30000,
-            "costForTwoString": "₹300 FOR TWO",
-            "deliveryTime": 33,
-            "minDeliveryTime": 33,
-            "maxDeliveryTime": 33,
-            "slaString": "33 MINS",
-            "lastMileTravel": 1.899999976158142,
-            "slugs": {
-                "restaurant": "pandit-ji-ke-paranthe-begampur-begampur",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "Q44 Third floor Budh Vihar Phase 1 Rohini,Near Mohalla clinic, New Delhi 110086 ",
-            "locality": "Near Mohalla Clinic",
-            "parentId": 154470,
-            "unserviceable": false,
-            "veg": true,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "distance",
-                        "fee": 3900,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 3900,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "3900",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "1.8 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "240497",
-                "deliveryTime": 33,
-                "minDeliveryTime": 33,
-                "maxDeliveryTime": 33,
-                "lastMileTravel": 1.899999976158142,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": false,
-            "avgRating": "3.8",
-            "totalRatings": 50,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "10325",
-            "name": "Pizzallo Hot",
-            "uuid": "0373cfc2-3d76-41c5-8fd3-2b846099d61e",
-            "city": "4",
-            "area": "Sector 3, Rohini",
-            "totalRatingsString": "20+ ratings",
-            "cloudinaryImageId": "q4cumlrajxgrsrod3asn",
-            "cuisines": [
-                "Pizzas",
-                "Italian"
-            ],
-            "tags": [],
-            "costForTwo": 40000,
-            "costForTwoString": "₹400 FOR TWO",
-            "deliveryTime": 28,
-            "minDeliveryTime": 28,
-            "maxDeliveryTime": 28,
-            "slaString": "28 MINS",
-            "lastMileTravel": 0.5,
-            "slugs": {
-                "restaurant": "m-pizzallo-hot-sector-3-near-gopal-chole-bhature-rohini",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "F 22/1, Rohini Sector 3, Near Gopal Chole Bhature",
-            "locality": "rohini, sector 3",
-            "parentId": 159117,
-            "unserviceable": false,
-            "veg": true,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "aggregatedDiscountInfo": {
-                "header": "50% off",
-                "shortDescriptionList": [
-                    {
-                        "meta": "50% off | Use LNBINGE",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "50% off up to ₹100 | Use code LNBINGE",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "aggregatedDiscountInfoV2": {
-                "header": "50% OFF",
-                "shortDescriptionList": [
-                    {
-                        "meta": "Use LNBINGE",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "50% off up to ₹100 | Use code LNBINGE",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "distance",
-                        "fee": 3900,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 3900,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "3900",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "0.5 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "10325",
-                "deliveryTime": 28,
-                "minDeliveryTime": 28,
-                "maxDeliveryTime": 28,
-                "lastMileTravel": 0.5,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": false,
-            "avgRating": "3.0",
-            "totalRatings": 20,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "504341",
-            "name": "Sardar Ji Late Night Kitchen (Paschim Vihar)",
-            "uuid": "ec1fe4c8-b421-4098-909d-b997ff949840",
-            "city": "4",
-            "area": "Paschim Vihar",
-            "totalRatingsString": "100+ ratings",
-            "cloudinaryImageId": "xax24mb5ktl439uewghm",
-            "cuisines": [
-                "North Indian",
-                "Punjabi",
-                "Chinese",
-                "Biryani",
-                "Beverages",
-                "Tandoor",
-                "Indian"
-            ],
-            "tags": [],
-            "costForTwo": 30000,
-            "costForTwoString": "₹300 FOR TWO",
-            "deliveryTime": 41,
-            "minDeliveryTime": 40,
-            "maxDeliveryTime": 50,
-            "slaString": "40-50 MINS",
-            "lastMileTravel": 5.699999809265137,
-            "slugs": {
-                "restaurant": "sardar-ji-late-night-kitchen-paschim-vihar-paschim-vihar",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "Shop- 13, Block A, DDA complex, Paschim Vihar  110063",
-            "locality": "Dda Complex",
-            "parentId": 13225,
-            "unserviceable": false,
-            "veg": false,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "ribbon": [
-                {
-                    "type": "PROMOTED"
-                }
-            ],
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "distance",
-                        "fee": 5700,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 5700,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "5700",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "cid=5652432~p=7~eid=00000185-8dfa-83b4-13e2-a1210019074a",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "5.6 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "504341",
-                "deliveryTime": 41,
-                "minDeliveryTime": 40,
-                "maxDeliveryTime": 50,
-                "lastMileTravel": 5.699999809265137,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": true,
-            "avgRating": "3.8",
-            "totalRatings": 100,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "400823",
-            "name": "Pao Ji Aamchi Mumbai Se",
-            "uuid": "6253e3de-93d5-4575-9753-0656e966b199",
-            "city": "4",
-            "area": "Rohini",
-            "totalRatingsString": "20+ ratings",
-            "cloudinaryImageId": "twycspvu6ojwe17ew8ob",
-            "cuisines": [
-                "Indian",
-                "Snacks",
-                "Street Food"
-            ],
-            "tags": [],
-            "costForTwo": 15000,
-            "costForTwoString": "₹150 FOR TWO",
-            "deliveryTime": 32,
-            "minDeliveryTime": 32,
-            "maxDeliveryTime": 32,
-            "slaString": "32 MINS",
-            "lastMileTravel": 0.8999999761581421,
-            "slugs": {
-                "restaurant": "pao-ji-rohini-rohini",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "70/1/1 1st floor, street no 15, village mangolpur kalan, near Hanuman  mandir, Rohini sector 2, Delhi-110085",
-            "locality": "Rohini",
-            "parentId": 252360,
-            "unserviceable": false,
-            "veg": false,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "distance",
-                        "fee": 3900,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 3900,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "3900",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "0.8 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "400823",
-                "deliveryTime": 32,
-                "minDeliveryTime": 32,
-                "maxDeliveryTime": 32,
-                "lastMileTravel": 0.8999999761581421,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": false,
-            "avgRating": "2.8",
-            "totalRatings": 20,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "445821",
-            "name": "Mr. Paratha",
-            "uuid": "16f5c6ea-f5df-46fd-ad24-471abdb42d49",
-            "city": "4",
-            "area": "Rohini",
-            "totalRatingsString": "20+ ratings",
-            "cloudinaryImageId": "wspmbgpic6y902vuaai6",
-            "cuisines": [
-                "Punjabi",
-                "North Indian",
-                "Indian"
-            ],
-            "tags": [],
-            "costForTwo": 20000,
-            "costForTwoString": "₹200 FOR TWO",
-            "deliveryTime": 36,
-            "minDeliveryTime": 36,
-            "maxDeliveryTime": 36,
-            "slaString": "36 MINS",
-            "lastMileTravel": 0.8999999761581421,
-            "slugs": {
-                "restaurant": "mr-paratha-rohini-rohini",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "70/1/1 1st floor, street no 15, village mangolpur kalan, near Hanuman  mandir, Rohini sector 2, Delhi-110085",
-            "locality": "Rohini",
-            "parentId": 140339,
-            "unserviceable": false,
-            "veg": false,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "distance",
-                        "fee": 3900,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 3900,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "3900",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "0.8 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "445821",
-                "deliveryTime": 36,
-                "minDeliveryTime": 36,
-                "maxDeliveryTime": 36,
-                "lastMileTravel": 0.8999999761581421,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": false,
-            "avgRating": "4.4",
-            "totalRatings": 20,
-            "new": false
-        },
-        "subtype": "basic"
-    },
-    {
-        "type": "restaurant",
-        "data": {
-            "type": "F",
-            "id": "372208",
-            "name": "MoonMoon - Juicy Crustwiches",
-            "uuid": "342d28c9-32a5-4a8b-92fe-39ab266e4f9c",
-            "city": "4",
-            "area": "Rohini",
-            "totalRatingsString": "100+ ratings",
-            "cloudinaryImageId": "m4a8hjpyku23kaqxrm4k",
-            "cuisines": [
-                "American",
-                "Snacks",
-                "Beverages"
-            ],
-            "tags": [],
-            "costForTwo": 30000,
-            "costForTwoString": "₹300 FOR TWO",
-            "deliveryTime": 39,
-            "minDeliveryTime": 35,
-            "maxDeliveryTime": 45,
-            "slaString": "35-45 MINS",
-            "lastMileTravel": 3,
-            "slugs": {
-                "restaurant": "moonmoon---juicy-crustwiches-rohini-rohini",
-                "city": "delhi"
-            },
-            "cityState": "4",
-            "address": "CSC 5, Shop No. 23, DDA Market, Sector 8, Rohini, New Delhi",
-            "locality": "Sector 8 Rohini",
-            "parentId": 21959,
-            "unserviceable": false,
-            "veg": false,
-            "select": false,
-            "favorite": false,
-            "tradeCampaignHeaders": [],
-            "aggregatedDiscountInfo": {
-                "header": "20% off",
-                "shortDescriptionList": [
-                    {
-                        "meta": "20% off | Use PARTY",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "20% off | Use code PARTY",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "aggregatedDiscountInfoV2": {
-                "header": "20% OFF",
-                "shortDescriptionList": [
-                    {
-                        "meta": "Use PARTY",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "descriptionList": [
-                    {
-                        "meta": "20% off | Use code PARTY",
-                        "discountType": "Percentage",
-                        "operationType": "RESTAURANT"
-                    }
-                ],
-                "subHeader": "",
-                "headerType": 0,
-                "superFreedel": ""
-            },
-            "ribbon": [
-                {
-                    "type": "PROMOTED"
-                }
-            ],
-            "chain": [],
-            "feeDetails": {
-                "fees": [
-                    {
-                        "name": "distance",
-                        "fee": 4600,
-                        "message": ""
-                    },
-                    {
-                        "name": "time",
-                        "fee": 0,
-                        "message": ""
-                    },
-                    {
-                        "name": "special",
-                        "fee": 0,
-                        "message": ""
-                    }
-                ],
-                "totalFees": 4600,
-                "message": "",
-                "title": "Delivery Charge",
-                "amount": "4600",
-                "icon": ""
-            },
-            "availability": {
-                "opened": true,
-                "nextOpenMessage": "",
-                "nextCloseMessage": ""
-            },
-            "longDistanceEnabled": 0,
-            "rainMode": "NONE",
-            "thirdPartyAddress": false,
-            "thirdPartyVendor": "",
-            "adTrackingID": "cid=5700497~p=10~eid=00000185-8e3a-5c23-13f0-6a6a00930a41",
-            "badges": {
-                "imageBased": [],
-                "textBased": [],
-                "textExtendedBadges": []
-            },
-            "lastMileTravelString": "3 kms",
-            "hasSurge": false,
-            "sla": {
-                "restaurantId": "372208",
-                "deliveryTime": 39,
-                "minDeliveryTime": 35,
-                "maxDeliveryTime": 45,
-                "lastMileTravel": 3,
-                "lastMileDistance": 0,
-                "serviceability": "SERVICEABLE",
-                "rainMode": "NONE",
-                "longDistance": "NOT_LONG_DISTANCE",
-                "preferentialService": false,
-                "iconType": "EMPTY"
-            },
-            "promoted": true,
-            "avgRating": "3.9",
-            "totalRatings": 100,
-            "new": false
-        },
-        "subtype": "basic"
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0b04.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Loading......"
-    }, void 0, false, {
-        fileName: "src/components/Shimmer.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$0b04.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"7f60a100c7d8bd15":"786KC"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.8.1
  *
@@ -33700,7 +32677,1045 @@ function getTargetMatch(matches, location) {
     return pathMatches[pathMatches.length - 1];
 } //#endregion
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+function filterData(txt, data) {
+    const result = data.filter((dataItem)=>dataItem?.data?.name?.toLowerCase()?.includes(txt));
+    console.log(result);
+    return result;
+}
+const Body = ()=>{
+    _s();
+    const [searchTxt, setSearchTxt] = (0, _react.useState)(""); //This function return 
+    const [allRestaurantData, setAllRestaurantData] = (0, _react.useState)([]);
+    const [filteredRestaurantData, setFilteredRestaurantData] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        //API Call
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        console.log(json?.data?.cards[2]?.data?.data?.cards);
+        setAllRestaurantData(json?.data?.cards[2]?.data?.data?.cards);
+        setFilteredRestaurantData(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    return allRestaurantData?.length !== 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-input-wrap",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        id: "one",
+                        type: "text",
+                        placeholder: "search items",
+                        value: searchTxt,
+                        onChange: (e)=>setSearchTxt(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 26,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "button",
+                        onClick: ()=>{
+                            let data = filterData(searchTxt, allRestaurantData);
+                            setFilteredRestaurantData(data);
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 27,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 25,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-list",
+                children: filteredRestaurantData?.length !== 0 ? filteredRestaurantData?.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                        ...restaurant.data,
+                        key: restaurant.data.id,
+                        __source: {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 34,
+                            columnNumber: 16
+                        },
+                        __self: undefined
+                    });
+                }) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "No data found!!!"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 35,
+                    columnNumber: 12
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 32,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 37,
+        columnNumber: 15
+    }, undefined);
+};
+_s(Body, "mwtwxKgTHbW4wul+yeee+Xub44U=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _contants = require("../contants");
+//Case 10- Using Map function to make it more dynamic
+const RestaurantCard = ({ name , cloudinaryImageId , cuisines , totalRatingsString  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: (0, _contants.IMG_CDN_IMAGE) + cloudinaryImageId,
+                alt: "Burger King"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: cuisines.join(",")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: totalRatingsString
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 9,
+        columnNumber: 10
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../contants":"6xi3Y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6xi3Y":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_IMAGE", ()=>IMG_CDN_IMAGE);
+parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
+const IMG_CDN_IMAGE = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+const restaurantList = [
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "168043",
+            "name": "Burger Singh (Big Punjabi Burgers)",
+            "uuid": "ea186a36-57a8-4314-a33f-d7c0d8c3b760",
+            "city": "4",
+            "area": "Sector-10, Rohini",
+            "totalRatingsString": "1000+ ratings",
+            "cloudinaryImageId": "fyuyd6jokqveketdmzpn",
+            "cuisines": [
+                "American",
+                "Fast Food",
+                "Snacks"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 33,
+            "minDeliveryTime": 30,
+            "maxDeliveryTime": 40,
+            "slaString": "30-40 MINS",
+            "lastMileTravel": 2,
+            "slugs": {
+                "restaurant": "burger-singh-rohini",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "Shop No-11, Ground Floor, D Mall, Twin District Centre, Sector-10,Rohini, Rohini, North West , Delhi-110085",
+            "locality": "Sector-10",
+            "parentId": 375065,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "60% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "60% off | Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "60% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "60% off up to ₹120 | Use code TRYNEW",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "distance",
+                        "fee": 3900,
+                        "message": ""
+                    },
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 3900,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "3900",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "2 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "168043",
+                "deliveryTime": 33,
+                "minDeliveryTime": 30,
+                "maxDeliveryTime": 40,
+                "lastMileTravel": 2,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.1",
+            "totalRatings": 1000,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "240497",
+            "name": "Pandit Ji Ke Paranthe",
+            "uuid": "e4a09101-93ee-4030-b7dc-310963a082f2",
+            "city": "4",
+            "area": "Budh Vihar Phase 1",
+            "totalRatingsString": "50+ ratings",
+            "cloudinaryImageId": "mdhiha2wnryfemt2d4ji",
+            "cuisines": [
+                "Indian"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 33,
+            "minDeliveryTime": 33,
+            "maxDeliveryTime": 33,
+            "slaString": "33 MINS",
+            "lastMileTravel": 1.899999976158142,
+            "slugs": {
+                "restaurant": "pandit-ji-ke-paranthe-begampur-begampur",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "Q44 Third floor Budh Vihar Phase 1 Rohini,Near Mohalla clinic, New Delhi 110086 ",
+            "locality": "Near Mohalla Clinic",
+            "parentId": 154470,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "distance",
+                        "fee": 3900,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 3900,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "3900",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "1.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "240497",
+                "deliveryTime": 33,
+                "minDeliveryTime": 33,
+                "maxDeliveryTime": 33,
+                "lastMileTravel": 1.899999976158142,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "3.8",
+            "totalRatings": 50,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "10325",
+            "name": "Pizzallo Hot",
+            "uuid": "0373cfc2-3d76-41c5-8fd3-2b846099d61e",
+            "city": "4",
+            "area": "Sector 3, Rohini",
+            "totalRatingsString": "20+ ratings",
+            "cloudinaryImageId": "q4cumlrajxgrsrod3asn",
+            "cuisines": [
+                "Pizzas",
+                "Italian"
+            ],
+            "tags": [],
+            "costForTwo": 40000,
+            "costForTwoString": "₹400 FOR TWO",
+            "deliveryTime": 28,
+            "minDeliveryTime": 28,
+            "maxDeliveryTime": 28,
+            "slaString": "28 MINS",
+            "lastMileTravel": 0.5,
+            "slugs": {
+                "restaurant": "m-pizzallo-hot-sector-3-near-gopal-chole-bhature-rohini",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "F 22/1, Rohini Sector 3, Near Gopal Chole Bhature",
+            "locality": "rohini, sector 3",
+            "parentId": 159117,
+            "unserviceable": false,
+            "veg": true,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "50% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "50% off | Use LNBINGE",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code LNBINGE",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "50% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use LNBINGE",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "50% off up to ₹100 | Use code LNBINGE",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "distance",
+                        "fee": 3900,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 3900,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "3900",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "0.5 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "10325",
+                "deliveryTime": 28,
+                "minDeliveryTime": 28,
+                "maxDeliveryTime": 28,
+                "lastMileTravel": 0.5,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "3.0",
+            "totalRatings": 20,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "504341",
+            "name": "Sardar Ji Late Night Kitchen (Paschim Vihar)",
+            "uuid": "ec1fe4c8-b421-4098-909d-b997ff949840",
+            "city": "4",
+            "area": "Paschim Vihar",
+            "totalRatingsString": "100+ ratings",
+            "cloudinaryImageId": "xax24mb5ktl439uewghm",
+            "cuisines": [
+                "North Indian",
+                "Punjabi",
+                "Chinese",
+                "Biryani",
+                "Beverages",
+                "Tandoor",
+                "Indian"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 41,
+            "minDeliveryTime": 40,
+            "maxDeliveryTime": 50,
+            "slaString": "40-50 MINS",
+            "lastMileTravel": 5.699999809265137,
+            "slugs": {
+                "restaurant": "sardar-ji-late-night-kitchen-paschim-vihar-paschim-vihar",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "Shop- 13, Block A, DDA complex, Paschim Vihar  110063",
+            "locality": "Dda Complex",
+            "parentId": 13225,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "distance",
+                        "fee": 5700,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 5700,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "5700",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5652432~p=7~eid=00000185-8dfa-83b4-13e2-a1210019074a",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "5.6 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "504341",
+                "deliveryTime": 41,
+                "minDeliveryTime": 40,
+                "maxDeliveryTime": 50,
+                "lastMileTravel": 5.699999809265137,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "3.8",
+            "totalRatings": 100,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "400823",
+            "name": "Pao Ji Aamchi Mumbai Se",
+            "uuid": "6253e3de-93d5-4575-9753-0656e966b199",
+            "city": "4",
+            "area": "Rohini",
+            "totalRatingsString": "20+ ratings",
+            "cloudinaryImageId": "twycspvu6ojwe17ew8ob",
+            "cuisines": [
+                "Indian",
+                "Snacks",
+                "Street Food"
+            ],
+            "tags": [],
+            "costForTwo": 15000,
+            "costForTwoString": "₹150 FOR TWO",
+            "deliveryTime": 32,
+            "minDeliveryTime": 32,
+            "maxDeliveryTime": 32,
+            "slaString": "32 MINS",
+            "lastMileTravel": 0.8999999761581421,
+            "slugs": {
+                "restaurant": "pao-ji-rohini-rohini",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "70/1/1 1st floor, street no 15, village mangolpur kalan, near Hanuman  mandir, Rohini sector 2, Delhi-110085",
+            "locality": "Rohini",
+            "parentId": 252360,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "distance",
+                        "fee": 3900,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 3900,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "3900",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "0.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "400823",
+                "deliveryTime": 32,
+                "minDeliveryTime": 32,
+                "maxDeliveryTime": 32,
+                "lastMileTravel": 0.8999999761581421,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "2.8",
+            "totalRatings": 20,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "445821",
+            "name": "Mr. Paratha",
+            "uuid": "16f5c6ea-f5df-46fd-ad24-471abdb42d49",
+            "city": "4",
+            "area": "Rohini",
+            "totalRatingsString": "20+ ratings",
+            "cloudinaryImageId": "wspmbgpic6y902vuaai6",
+            "cuisines": [
+                "Punjabi",
+                "North Indian",
+                "Indian"
+            ],
+            "tags": [],
+            "costForTwo": 20000,
+            "costForTwoString": "₹200 FOR TWO",
+            "deliveryTime": 36,
+            "minDeliveryTime": 36,
+            "maxDeliveryTime": 36,
+            "slaString": "36 MINS",
+            "lastMileTravel": 0.8999999761581421,
+            "slugs": {
+                "restaurant": "mr-paratha-rohini-rohini",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "70/1/1 1st floor, street no 15, village mangolpur kalan, near Hanuman  mandir, Rohini sector 2, Delhi-110085",
+            "locality": "Rohini",
+            "parentId": 140339,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "distance",
+                        "fee": 3900,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 3900,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "3900",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "0.8 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "445821",
+                "deliveryTime": 36,
+                "minDeliveryTime": 36,
+                "maxDeliveryTime": 36,
+                "lastMileTravel": 0.8999999761581421,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": false,
+            "avgRating": "4.4",
+            "totalRatings": 20,
+            "new": false
+        },
+        "subtype": "basic"
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "type": "F",
+            "id": "372208",
+            "name": "MoonMoon - Juicy Crustwiches",
+            "uuid": "342d28c9-32a5-4a8b-92fe-39ab266e4f9c",
+            "city": "4",
+            "area": "Rohini",
+            "totalRatingsString": "100+ ratings",
+            "cloudinaryImageId": "m4a8hjpyku23kaqxrm4k",
+            "cuisines": [
+                "American",
+                "Snacks",
+                "Beverages"
+            ],
+            "tags": [],
+            "costForTwo": 30000,
+            "costForTwoString": "₹300 FOR TWO",
+            "deliveryTime": 39,
+            "minDeliveryTime": 35,
+            "maxDeliveryTime": 45,
+            "slaString": "35-45 MINS",
+            "lastMileTravel": 3,
+            "slugs": {
+                "restaurant": "moonmoon---juicy-crustwiches-rohini-rohini",
+                "city": "delhi"
+            },
+            "cityState": "4",
+            "address": "CSC 5, Shop No. 23, DDA Market, Sector 8, Rohini, New Delhi",
+            "locality": "Sector 8 Rohini",
+            "parentId": 21959,
+            "unserviceable": false,
+            "veg": false,
+            "select": false,
+            "favorite": false,
+            "tradeCampaignHeaders": [],
+            "aggregatedDiscountInfo": {
+                "header": "20% off",
+                "shortDescriptionList": [
+                    {
+                        "meta": "20% off | Use PARTY",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off | Use code PARTY",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "aggregatedDiscountInfoV2": {
+                "header": "20% OFF",
+                "shortDescriptionList": [
+                    {
+                        "meta": "Use PARTY",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "descriptionList": [
+                    {
+                        "meta": "20% off | Use code PARTY",
+                        "discountType": "Percentage",
+                        "operationType": "RESTAURANT"
+                    }
+                ],
+                "subHeader": "",
+                "headerType": 0,
+                "superFreedel": ""
+            },
+            "ribbon": [
+                {
+                    "type": "PROMOTED"
+                }
+            ],
+            "chain": [],
+            "feeDetails": {
+                "fees": [
+                    {
+                        "name": "distance",
+                        "fee": 4600,
+                        "message": ""
+                    },
+                    {
+                        "name": "time",
+                        "fee": 0,
+                        "message": ""
+                    },
+                    {
+                        "name": "special",
+                        "fee": 0,
+                        "message": ""
+                    }
+                ],
+                "totalFees": 4600,
+                "message": "",
+                "title": "Delivery Charge",
+                "amount": "4600",
+                "icon": ""
+            },
+            "availability": {
+                "opened": true,
+                "nextOpenMessage": "",
+                "nextCloseMessage": ""
+            },
+            "longDistanceEnabled": 0,
+            "rainMode": "NONE",
+            "thirdPartyAddress": false,
+            "thirdPartyVendor": "",
+            "adTrackingID": "cid=5700497~p=10~eid=00000185-8e3a-5c23-13f0-6a6a00930a41",
+            "badges": {
+                "imageBased": [],
+                "textBased": [],
+                "textExtendedBadges": []
+            },
+            "lastMileTravelString": "3 kms",
+            "hasSurge": false,
+            "sla": {
+                "restaurantId": "372208",
+                "deliveryTime": 39,
+                "minDeliveryTime": 35,
+                "maxDeliveryTime": 45,
+                "lastMileTravel": 3,
+                "lastMileDistance": 0,
+                "serviceability": "SERVICEABLE",
+                "rainMode": "NONE",
+                "longDistance": "NOT_LONG_DISTANCE",
+                "preferentialService": false,
+                "iconType": "EMPTY"
+            },
+            "promoted": true,
+            "avgRating": "3.9",
+            "totalRatings": 100,
+            "new": false
+        },
+        "subtype": "basic"
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Loading......"
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
