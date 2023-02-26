@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 
 export const Title = () => (
     <a href='/'>
@@ -8,6 +9,12 @@ export const Title = () => (
 )
 
 const Header = () => {
+    const [isLogin, setLogin] = useState(false);
+    
+    useEffect(() => {
+        console.log("Use Effect");
+    }, [])
+
     return (
         <div className='header'>
             <Title />
@@ -17,6 +24,10 @@ const Header = () => {
                     <li>About</li>
                     <li>Contact</li>
                     <li>Cart</li>
+                    <li><button onClick={() => {
+                        isLogin ? setLogin(false) : setLogin(true)}
+                    }
+                    >{isLogin ? 'Logout' : 'Login'}</button></li>
                 </ul>
             </div>
         </div>

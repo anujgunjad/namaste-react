@@ -272,8 +272,8 @@ const AppLayout = () => {
     return (
         <>
             <Header />
-            <Body />
-            <Footer />
+            {/* <Body />
+            <Footer /> */}
         </>
     )
 }
