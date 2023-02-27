@@ -5,7 +5,8 @@ import Body from './components/Body';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import ErrorPage from './components/ErrorPage';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+import RestaurantMenu from './components/RestrauntMenu';
 // Case 1- using hardcoded data
 // const RestaurantCard = () => {
 //     return (
@@ -269,7 +270,7 @@ const AppLayout = () => {
     return (
         <>
             <Header />
-            <Body />
+            <Outlet />
             <Footer />
         </>
     )
@@ -279,12 +280,22 @@ const appRouter = createBrowserRouter([
     {
         path: '/',
         element: <AppLayout />,
-        errorElement: <ErrorPage />
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: '/',
+                element: <Body />
+            },
+            {
+                path: '/about',
+                element: <AboutUs />
+            },
+            {
+                path: '/restaurant/:id',
+                element: <RestaurantMenu />
+            }
+        ]
     },
-    {
-        path: '/about',
-        element: <AboutUs />
-    }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
