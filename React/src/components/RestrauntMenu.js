@@ -10,7 +10,7 @@ const RestaurantMenu = () => {
     }, []);
 
     async function getSingleRestaurant() {
-        let data = await fetch('https://www.swiggy.com/dapi/menu/v4/full?lat=28.4377609&lng=77.0994205&menuId=19102');
+        let data = await fetch('https://www.swiggy.com/dapi/menu/v4/full?lat=28.4377609&lng=77.0994205&menuId='+id);
         let json = await data.json()
         setRestaurant(json.data);
     }
